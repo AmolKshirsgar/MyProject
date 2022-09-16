@@ -30,6 +30,9 @@
              <suiteXmlFiles>
               <suiteXmlFile>TestSuite/SubmitOrder.xml</suiteXmlFile>
              </suiteXmlFiles>
+             <systemPropertyVariables>
+             <appURL>${url}</appURL>
+             </systemPropertyVariables>
            </configuration>
          </plugin>
        </plugins>
