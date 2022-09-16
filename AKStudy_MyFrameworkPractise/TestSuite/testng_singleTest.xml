@@ -9,7 +9,7 @@
 
 <parameter name="browser" value="chrome"></parameter>
 
-  <test thread-count="5" name="Test_All">
+  <test thread-count="5" name="SingleTest">
    	 <classes>
 	      <class name="com.mystore.testcases.LoginPageTest"/>
 <!-- 	  <class name="com.mystore.testcases.EndToEndTest"/>

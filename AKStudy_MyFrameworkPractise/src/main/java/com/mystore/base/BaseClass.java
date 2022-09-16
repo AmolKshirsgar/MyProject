@@ -14,6 +14,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeSuite;
 
+import com.mystore.utility.WaitStatements;
+
 public class BaseClass 
 {
 	//public static WebDriver driver;  we can keep driver reference for normal run
@@ -52,8 +54,9 @@ public class BaseClass
 			getDriver().manage().window().maximize();
 		}	
 		
-		getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		getDriver().manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(WaitStatements.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		getDriver().manage().timeouts().pageLoadTimeout(WaitStatements.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		
 		
 		getDriver().get(prop.getProperty("url"));
 	}

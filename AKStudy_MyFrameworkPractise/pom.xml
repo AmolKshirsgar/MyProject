@@ -72,7 +72,7 @@
       </build>
     </profile>
     
-      <profile>
+   <profile>
   	<id>testng_sanity</id>
   	  <build>
   	   <plugins>
@@ -90,7 +90,7 @@
       </build>
     </profile>
     
-        <profile>
+   <profile>
   	<id>testng_singleTest</id>
   	  <build>
   	   <plugins>
@@ -108,7 +108,7 @@
       </build>
     </profile>
     
-          <profile>
+   <profile>
   	<id>testng_smoke</id>
   	  <build>
   	   <plugins>
@@ -126,7 +126,7 @@
       </build>
     </profile>
     
-       <profile>
+   <profile>
   	<id>CucumberTest</id>
   	  <build>
   	   <plugins>
@@ -147,9 +147,7 @@
  
 </profiles>
   
-
-
-  <dependencies>
+ <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
